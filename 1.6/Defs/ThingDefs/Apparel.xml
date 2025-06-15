@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Bases -->
+  <ThingDef ParentName="ApparelBase" Name="MCBackPackBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+    </apparel>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <generateCommonality>2</generateCommonality>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="MCBackPackBase" Name="MCSmallBackpackBase" Abstract="True">
+    <description>A small backpack to make carry things more convinient.</description>
+    <statBases>
+      <Insulation_Cold>2</Insulation_Cold>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+      <CarryingCapacity>75</CarryingCapacity>
+    </equippedStatOffsets>
+    <costStuffCount>40</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="MCBackPackBase" Name="MCLargeBackpackBase" Abstract="True">
+    <description>A large backpack to make carry even more things more convinient.</description>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>6</Mass>
+      <Insulation_Cold>3</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.35</MoveSpeed>
+      <CarryingCapacity>150</CarryingCapacity>
+    </equippedStatOffsets>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+  <!-- Backpacks -->
+  <ThingDef ParentName="MCSmallBackpackBase">
+    <defName>SmallBackpackMC</defName>
+    <label>Dark Small Backpack</label>
+    <graphicData>
+      <texPath>Things/SmallBackpack/SmallBackpack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>6</weight>
+          <only>RGBA(0.2,0.2,0.2,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <apparel>
+      <wornGraphicPath>Things/SmallBackpack/SmallBackpack</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="MCSmallBackpackBase">
+    <defName>SmallBackpackNaturalMC</defName>
+    <label>Colorful Small Backpack</label>
+    <graphicData>
+      <texPath>Things/SmallBackpackNatural/SmallBackpackNatural</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/SmallBackpackNatural/SmallBackpackNatural</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="MCLargeBackpackBase">
+    <defName>LargeBackpackMC</defName>
+    <label>Dark Large Backpack</label>
+    <graphicData>
+      <texPath>Things/LargeBackpack/LargeBackpack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>6</weight>
+          <only>RGBA(0.2,0.2,0.2,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <apparel>
+      <wornGraphicPath>Things/LargeBackpack/LargeBackpack</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="MCLargeBackpackBase">
+    <defName>LargeBackpackNaturalMC</defName>
+    <label>Colorful Large Backpack</label>
+    <graphicData>
+      <texPath>Things/LargeBackpackNatural/LargeBackpackNatural</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/LargeBackpackNatural/LargeBackpackNatural</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+</Defs>
