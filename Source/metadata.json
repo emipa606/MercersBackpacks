@@ -5,5 +5,11 @@
   "PreviewVersion": "1.6",
   "SocialImageSet": true,
   "SearchTags": "backpacks",
-  "LastXmlCleaning": "2025-06-15T21:11:40.4593398+02:00"
+  "LastXmlCleaning": "2025-09-06T20:48:57.7166195+02:00",
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": false,
+  "LinesOfCode": 0,
+  "LinesOfXML": 4705,
+  "CodeBaseSize": 58
 }
