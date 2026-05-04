@@ -1,5 +1,8 @@
 # Changelog for MercersBackpacks
 
+1.6.2 - Backbacks do no longer count as clothing for nudists
+
+
 1.6.1 - Fixed packs being covered by shell clothing
 
 
