@@ -1,5 +1,8 @@
 # Changelog for MercersBackpacks
 
+1.6.3 - Fixed wrong author name
+
+
 1.6.2 - Backbacks do no longer count as clothing for nudists
 
 

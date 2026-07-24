@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Mercer's Backpacks (Continued)</name>
   <packageId>Mlie.MercerBackpacks</packageId>
-  <author>Mlie</author>
+  <author>Mercer a.k.a. jaeger972</author>
   <url>https://github.com/emipa606/MercersBackpacks</url>
   <supportedVersions>
     <li>1.0</li>
@@ -60,5 +60,5 @@ A tiny mod made while one of BaRKy's streams.
 [/list] 
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2014572849][img]https://img.shields.io/github/v/release/emipa606/MercersBackpacks?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: backpacks</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 </ModMetaData>
